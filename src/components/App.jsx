@@ -30,13 +30,12 @@ function App() {
         <nav className="nav-link">
           <NavLink className="nav" to={"/"}>
             Bots
-          </NavLink>{" "}
+          </NavLink>
           <NavLink className="nav" to={"/your-army"}>
             Army
           </NavLink>
         </nav>
         <Routes>
-          {" "}
           <Route
             path="/"
             element={<BotCollection bots={bots} addToArmy={addToArmy} />}
