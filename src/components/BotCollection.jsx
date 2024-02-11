@@ -1,41 +1,52 @@
-//import { useEffect, useState } from "react";
+// import React, { useState, useEffect } from "react";
+// import Bot from "./Bot";
 
-function BotCollection({ botsData }) {
+// const BotCollection = () => {
+//   const [bots, setBots] = useState([]);
+
+//   // Fetch bots from db.json
+//   useEffect(() => {
+//     fetch("http://localhost:3000/bots")
+//       .then((resp) => resp.json())
+//       .then((data) => setBots(data.map((bot) => bot)));
+//   }, []);
+
+//   const handleEnlistBot = (bot) => {
+//     // Check if bot already enlisted and update state
+//     if (!bots.find((b) => b.id === bot.id)) {
+//       setBots(b => [...b, bot]);
+//     }
+//   };
+
+//   return (
+//     <>
+//       <h2>Bot Collection</h2>
+//       <div className="bot-collection">
+//         {bots.map((bot, index) => (
+//           <div className="bot-in-collection" key={index}>
+//             <Bot key={bot.id} bot={bot} onEnlistClick={handleEnlistBot} />
+//           </div>
+//         ))}
+//       </div>
+//     </>
+//   );
+// };
+
+// export default BotCollection;
+const BotCollection = ({ bots, addToArmy }) => {
   return (
-    <>
-      <table>
-        <thead>
-          <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>health</th>
-            <th>damage</th>
-            <th>armor</th>
-            <th>bot_class</th>
-            <th>catchphrase</th>
-            <th>created_at</th>
-            <th>updated_at</th>
-          </tr>
-        </thead>
-
-        <tbody>
-            {botsData.map((bot, _) => (
-              <tr key={bot}>
-                <td>{bot.id}</td>
-                <td>{bot.name}</td>
-                <td>{bot.health}</td>
-                <td>{bot.damage}</td>
-                <td>{bot.armor}</td>
-                <td>{bot.bot_class}</td>
-                <td>{bot.catchphrase}</td>
-                <td>{bot.created_at}</td>
-                <td>{bot.updated_at}</td>
-              </tr>
-            ))}
-        </tbody>
-      </table>
-    </>
+    <div>
+      <h2>Bot Collection</h2>
+      <div className="bot-collection">
+        {bots.map((bot, index) => (
+          <div className="bot-in-collection" key={index}>
+            <img src={bot.avatar_url} alt={bot.name} />
+            <h3>{bot.name}</h3>
+            <button onClick={() => addToArmy(bot)}>Add to Army</button>
+          </div>
+        ))}
+      </div>
+    </div>
   );
-}
-
+};
 export default BotCollection;

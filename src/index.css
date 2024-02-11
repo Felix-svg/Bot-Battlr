@@ -1,3 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  background-color: hsla(0, 4%, 5%, 0.952);
+  color: white;
+}
+h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+.your-bot-army {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.bot-in-army {
+  border: 1px solid rgb(34, 32, 32);
+  padding: 10px;
+  margin: 1px;
+  border-radius: 15px;
+}
+.bot-in-army img {
+  border: 1px solid rgb(39, 38, 38);
+  border-radius: 50%;
+}
+.bot-in-army button {
+  display: inline;
+  margin: 2px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.bot-collection {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.bot-in-collection {
+  border: 1px solid rgb(34, 32, 32);
+  padding: 10px;
+  margin: 1px;
+  border-radius: 15px;
+}
+.nav-link {
+  color: yellow;
+  text-decoration: none;
+  text-align: end;
+  padding: 5px;
+}
+.nav{
+  margin: 2px;
+  padding: 2px;
+}
+.nav:hover{
+ color: hsl(60, 100%, 40%);
+}
+.bot-in-collection {
+  border: 1px solid rgb(34, 32, 32);
+  padding: 10px;
+  margin: 1px;
+  border-radius: 15px;
+}
+.bot-in-collection img {
+  border: 1px solid rgb(39, 38, 38);
+  border-radius: 50%;
+}
+.bot-in-collection button {
+    display: inline;
+    margin: 2px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  }
+  .discharge-button{
+    background-color: red;
+    padding: 5px;
+  }
