@@ -23,12 +23,22 @@ function YourBotArmy({ army, setArmy }) {
           <div key={bot.id} className="bot-in-army">
             <img src={bot.avatar_url} alt={bot.name} />
             <h3>{bot.name}</h3>
-            <button onClick={() => handleReleaseBot(bot)}>Release</button>
+            <h3>Class: {bot.bot_class}</h3>
+            <h3>Health: {bot.health}</h3>
+            <h3>Armor: {bot.armor}</h3>
+            <h3>Damage: {bot.damage}</h3>
+            <h3>Catchphrase: {bot.catchphrase}</h3>
+            <button
+              onClick={() => handleReleaseBot(bot)}
+              className="release-button"
+            >
+              Release
+            </button>
             <button
               className="discharge-button"
               onClick={() => handleDischargeBot(bot)}
             >
-              Discharge
+              X
             </button>
           </div>
         ))}

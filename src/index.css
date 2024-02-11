@@ -7,13 +7,15 @@ body {
   background-color: hsla(0, 4%, 5%, 0.952);
   color: white;
 }
+
 h2 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 3rem;
-  text-decoration: underline;
+  color: rgba(86, 83, 83, 0.685);
 }
+
 .your-bot-army {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
@@ -21,16 +23,19 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+
 .bot-in-army {
   border: 1px solid rgb(34, 32, 32);
   padding: 10px;
   margin: 1px;
   border-radius: 15px;
 }
+
 .bot-in-army img {
   border: 1px solid rgb(39, 38, 38);
   border-radius: 50%;
 }
+
 .bot-in-army button {
   display: inline;
   margin: 2px;
@@ -53,29 +58,37 @@ h2 {
   margin: 1px;
   border-radius: 15px;
 }
+
 .nav-link {
   color: yellow;
   text-decoration: none;
   text-align: end;
   padding: 5px;
 }
+
 .nav{
   margin: 2px;
   padding: 2px;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
+
 .nav:hover{
  color: hsl(60, 100%, 40%);
 }
+
 .bot-in-collection {
   border: 1px solid rgb(34, 32, 32);
   padding: 10px;
   margin: 1px;
   border-radius: 15px;
 }
+
 .bot-in-collection img {
   border: 1px solid rgb(39, 38, 38);
   border-radius: 50%;
 }
+
 .bot-in-collection button {
     display: inline;
     margin: 2px;
@@ -83,7 +96,18 @@ h2 {
     border: none;
     cursor: pointer;
   }
+
   .discharge-button{
     background-color: red;
+    padding: 5px;
+  }
+
+  .release-button{
+    background-color: hsl(0, 100%, 20%);
+    padding: 5px;
+  }
+
+  .enlist-button{
+    background-color: hsl(120, 75%, 40%);
     padding: 5px;
   }
