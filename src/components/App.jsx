@@ -41,7 +41,7 @@ function App() {
             path="/"
             element={<BotCollection bots={bots} addToArmy={addToArmy} />}
           />
-          <Route path="your-army" element={<YourBotArmy army={army} />} />
+          <Route path="your-army" element={<YourBotArmy army={army} setArmy={setArmy} />} />
         </Routes>
       </Router>
     </div>
